@@ -1,0 +1,1456 @@
+@font-face {
+  font-family: Calibril Light;
+  src: url('../fonts/calibril_0.ttf');
+}
+@font-face {
+  font-family: Calibril;
+  src: url('../fonts/calibrib_0.ttf');
+}
+.p {
+  /* градиент */
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* Меню */
+.page-menu {
+  width: 100%;
+  height: 120px;
+  padding: 10px 50px;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 100;
+}
+.page-menu .logo {
+  width: 20%;
+  float: left;
+}
+.page-menu .navigation-menu {
+  width: 45%;
+  float: left;
+}
+.page-menu .navigation-menu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 0 0 35px;
+}
+.page-menu .navigation-menu .menu .effect:hover {
+  background-position: 28% 50%;
+}
+.page-menu .navigation-menu .menu li {
+  list-style-type: none;
+  padding-left: 35px;
+  text-align: right;
+}
+.page-menu .navigation-menu .menu li:hover {
+  background: url(../img/effect.png) no-repeat;
+  background-position: 23% 50%;
+}
+.page-menu .navigation-menu .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.page-menu .navigation-menu .menu li a:hover {
+  color: #a286c4;
+}
+.page-menu .contact-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  float: right;
+}
+.page-menu .contact-menu .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page-menu .contact-menu .contact img {
+  margin-top: 25px;
+}
+.page-menu .contact-menu .contact p {
+  color: #fff;
+  margin: 25px 0 0 10px;
+}
+.page-menu .contact-menu .button {
+  text-align: right;
+  margin: 25px 0 0 60px;
+}
+.page-menu .contact-menu .button .menu_btn {
+  display: inline-block;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#72a9d7), to(#c070b7));
+  background: linear-gradient(to right, #72a9d7, #c070b7);
+  padding: 7px 45px;
+  border-radius: 5px;
+  border-bottom: 4px solid #7b71bd;
+  color: #fff;
+  -webkit-box-shadow: -1px 8px 42px 0px rgba(255, 255, 255, 0.28);
+          box-shadow: -1px 8px 42px 0px rgba(255, 255, 255, 0.28);
+}
+.page-menu.fixed {
+  background: rgba(0, 0, 0, 0.8);
+}
+/* Шапка */
+.header {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 878px;
+}
+.slider {
+  margin-top: 350px;
+}
+.slider .slider-item {
+  text-align: center;
+}
+.slider .slider-item h1 {
+  color: #fff;
+  font-family: Calibril Light;
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+.slider .slider-item p {
+  margin-top: 30px;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+.slider .slider-item p span {
+  color: #7ca2d3;
+}
+.slider .slider-item img {
+  display: inline-block;
+}
+.slider .slider-item .old-price {
+  margin: 30px 10px 0 0;
+}
+.slider .slider-item .new-price {
+  margin: 30px 0 0 10px;
+}
+.slick-prev {
+  /* Левая стрелка */
+  background: url(../img/left-arrow.png) no-repeat;
+  height: 42px;
+  width: 22px;
+}
+.slick-prev:before {
+  display: none;
+}
+.slick-prev:hover {
+  background: url(../img/left-arrow.png) no-repeat !important;
+}
+.slick-prev:focus {
+  background: url(../img/left-arrow.png) no-repeat !important;
+}
+.slick-next {
+  /* Певая стрелка */
+  background: url(../img/right-arrow.png) no-repeat;
+  height: 42px;
+  width: 22px;
+}
+.slick-next:before {
+  display: none;
+}
+.slick-next:hover {
+  background: url(../img/right-arrow.png) no-repeat !important;
+}
+.slick-next:focus {
+  background: url(../img/right-arrow.png) no-repeat !important;
+}
+/* О нас */
+.about-us {
+  /* Первый */
+  /* Преимущество */
+}
+.about-us .about-our-store .history-store h2 {
+  margin-top: 120px;
+  font-size: 38px;
+  font-family: Calibri;
+  font-weight: 900;
+}
+.about-us .about-our-store .history-store p {
+  margin-top: 50px;
+  color: #a8a8a8;
+}
+.about-us .about-our-store .history-store .mini-box {
+  position: relative;
+  top: 50px;
+  right: 2%;
+}
+.about-us .about-our-store .history-store .text-jobs {
+  position: relative;
+  bottom: 72px;
+  left: 5%;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.about-us .about-our-store .history-store ul {
+  margin-top: 30px;
+  list-style-type: none;
+}
+.about-us .about-our-store .history-store ul .category-1,
+.about-us .about-our-store .history-store ul .category-2,
+.about-us .about-our-store .history-store ul .category-3 {
+  position: relative;
+  right: 8%;
+  margin-top: 10px;
+  display: block;
+}
+.about-us .about-our-store .history-store ul .category-1 img,
+.about-us .about-our-store .history-store ul .category-2 img,
+.about-us .about-our-store .history-store ul .category-3 img {
+  margin: 0 35px 5px 0;
+}
+.about-us .about-our-store .history-store ul .category-4,
+.about-us .about-our-store .history-store ul .category-5,
+.about-us .about-our-store .history-store ul .category-6 {
+  position: relative;
+  bottom: 113px;
+  left: 38%;
+  margin-top: 10px;
+}
+.about-us .about-our-store .history-store ul .category-4 img,
+.about-us .about-our-store .history-store ul .category-5 img,
+.about-us .about-our-store .history-store ul .category-6 img {
+  margin: 0 35px 4px 0;
+}
+.about-us .about-our-store .iPhone {
+  margin-top: 126px;
+  float: right;
+}
+.about-us .our-advantage {
+  margin-top: 40px;
+}
+.about-us .our-advantage .box-advantage-1,
+.about-us .our-advantage .box-advantage-2,
+.about-us .our-advantage .box-advantage-3,
+.about-us .our-advantage .box-advantage-4,
+.about-us .our-advantage .box-advantage-5,
+.about-us .our-advantage .box-advantage-6,
+.about-us .our-advantage .box-advantage-7,
+.about-us .our-advantage .box-advantage-8 {
+  height: 220px;
+  text-align: center;
+}
+.about-us .our-advantage .box-advantage-1 p,
+.about-us .our-advantage .box-advantage-2 p,
+.about-us .our-advantage .box-advantage-3 p,
+.about-us .our-advantage .box-advantage-4 p,
+.about-us .our-advantage .box-advantage-5 p,
+.about-us .our-advantage .box-advantage-6 p,
+.about-us .our-advantage .box-advantage-7 p,
+.about-us .our-advantage .box-advantage-8 p {
+  color: #242424;
+  letter-spacing: 1px;
+}
+.about-us .our-advantage .box-advantage-3,
+.about-us .our-advantage .box-advantage-7 {
+  margin-left: 40px;
+}
+.about-us .our-advantage .box-advantage-4,
+.about-us .our-advantage .box-advantage-8 {
+  margin-left: 100px;
+}
+.about-us .our-advantage .box-advantage-1,
+.about-us .our-advantage .box-advantage-5 {
+  margin-right: 100px;
+}
+.about-us .our-advantage .box-advantage-2,
+.about-us .our-advantage .box-advantage-6 {
+  margin-right: 40px;
+}
+.about-us .our-advantage .box-advantage-1 p {
+  margin-top: 5px;
+}
+.about-us .our-advantage .box-advantage-3 p {
+  margin-top: 2px;
+}
+.about-us .our-advantage .box-advantage-4 p {
+  margin-top: 5px;
+}
+.about-us .our-advantage .box-advantage-6 img {
+  margin-left: 10px;
+}
+.about-us .our-advantage .box-advantage-6 p {
+  margin-top: 2px;
+}
+.about-us .our-advantage .box-advantage-7 p {
+  margin-top: 1px;
+}
+.about-us .our-advantage .box-advantage-8 p {
+  margin-top: 11px;
+}
+/* Товар */
+.product-catalog .header-product h1 {
+  font-size: 80px;
+  font-size: Calibri;
+  font-weight: 600;
+  color: #e6e6e6;
+  text-align: center;
+}
+.product-catalog .product {
+  /* Товары */
+  /* Первая линия */
+  /* Вторая линия */
+}
+.product-catalog .product .product-menu img {
+  position: relative;
+  right: 3%;
+  top: 95px;
+}
+.product-catalog .product .product-menu .menu-iphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px;
+  padding: 0;
+}
+.product-catalog .product .product-menu .menu-iphone li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+.product-catalog .product .product-menu .menu-iphone li a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+.product-catalog .product .product-menu .menu-iphone li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fdff36;
+  -webkit-transform: translateY(5px) scale(0);
+          transform: translateY(5px) scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.product-catalog .product .product-menu .menu-iphone li a:hover::after {
+  -webkit-transform: translateY(5px) scale(1);
+          transform: translateY(5px) scale(1);
+}
+.product-catalog .product .product-menu .menu-accessories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 0 260px;
+}
+.product-catalog .product .product-menu .menu-accessories li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+.product-catalog .product .product-menu .menu-accessories li a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+.product-catalog .product .product-menu .menu-accessories li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fdff36;
+  -webkit-transform: translateY(5px) scale(0);
+          transform: translateY(5px) scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.product-catalog .product .product-menu .menu-accessories li a:hover::after {
+  -webkit-transform: translateY(5px) scale(1);
+          transform: translateY(5px) scale(1);
+}
+.product-catalog .product .iphone-4,
+.product-catalog .product .iphone-5,
+.product-catalog .product .iphone-se,
+.product-catalog .product .iphone-6,
+.product-catalog .product .iphone-7,
+.product-catalog .product .iphone-8,
+.product-catalog .product .iphone-X {
+  display: none;
+}
+.product-catalog .product .iphone-4.active {
+  display: block;
+}
+.product-catalog .product .iphone-4.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-4.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-4.active .tovar p {
+  margin-top: 15px;
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-4.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .iphone-5.active {
+  display: block;
+}
+.product-catalog .product .iphone-5.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-5.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-5.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-5.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .iphone-se.active {
+  display: block;
+}
+.product-catalog .product .iphone-se.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-se.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-se.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-se.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .iphone-6.active {
+  display: block;
+}
+.product-catalog .product .iphone-6.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-6.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-6.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-6.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .iphone-7.active {
+  display: block;
+}
+.product-catalog .product .iphone-7.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-7.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-7.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-7.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .iphone-8.active {
+  display: block;
+}
+.product-catalog .product .iphone-8.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-8.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-8.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-8.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .iphone-X.active {
+  display: block;
+}
+.product-catalog .product .iphone-X.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .iphone-X.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .iphone-X.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .iphone-X.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .ipad,
+.product-catalog .product .ipod,
+.product-catalog .product .watch,
+.product-catalog .product .accessories,
+.product-catalog .product .imac {
+  display: none;
+}
+.product-catalog .product .ipad.active {
+  display: block;
+}
+.product-catalog .product .ipad.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .ipad.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .ipad.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .ipad.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .ipod.active {
+  display: block;
+}
+.product-catalog .product .ipod.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .ipod.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .ipod.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .ipod.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .watch.active {
+  display: block;
+}
+.product-catalog .product .watch.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .watch.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .watch.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .watch.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .accessories.active {
+  display: block;
+}
+.product-catalog .product .accessories.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .accessories.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .accessories.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .accessories.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-catalog .product .imac.active {
+  display: block;
+}
+.product-catalog .product .imac.active .tovar {
+  height: 625px;
+  margin-top: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.product-catalog .product .imac.active .tovar h4 {
+  font-family: Calibril;
+  font-size: 22px;
+}
+.product-catalog .product .imac.active .tovar p {
+  font-weight: 600;
+  font-family: Calibril Light;
+  font-size: 16px;
+}
+.product-catalog .product .imac.active .tovar button {
+  margin-top: 15px;
+  padding: 7px 60px;
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+/* Гарантия */
+.guarantee {
+  background: url(../img/bd-guarantee.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 530px;
+  margin-top: 80px;
+}
+.guarantee .box-guarantee {
+  text-align: center;
+}
+.guarantee .box-guarantee h2 {
+  margin-top: 45px;
+  font-family: Calibril Light;
+  font-weight: 900;
+  color: #fff;
+  font-size: 38px;
+}
+.guarantee .box-guarantee p {
+  font-family: Calibril Light;
+  color: #fff;
+  letter-spacing: .6px;
+  font-size: 16px;
+  margin-top: 40px;
+}
+.guarantee .box-guarantee img {
+  margin-top: 40px;
+  position: relative;
+}
+.guarantee .box-guarantee a {
+  position: absolute;
+  bottom: 7%;
+  left: 44%;
+  font-size: 16px;
+  margin-left: 5px;
+  /* градиент */
+  background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* Отзывы */
+.comments .header-comments h2 {
+  margin-top: 80px;
+  font-family: Calibril;
+  font-weight: 900;
+  color: #000;
+  font-size: 38px;
+  text-align: center;
+}
+.comments .client-feedback .comment1 {
+  margin-top: 80px;
+}
+.comments .client-feedback .comment1 .personality-client {
+  text-align: center;
+}
+.comments .client-feedback .comment1 .personality-client h4 {
+  font-family: Calibril Light;
+  color: #201215;
+}
+.comments .client-feedback .comment1 .review-text {
+  width: 850px;
+  height: 218px;
+  background: #f8f8f8;
+  margin-left: 94px;
+}
+.comments .client-feedback .comment1 .review-text p {
+  padding: 25px 60px 0 60px;
+  font-family: Calibril Light;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.comments .client-feedback .comment1 .review-text .italic {
+  margin-top: 20px;
+  font-style: italic;
+  font-family: Calibril Light;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 0 60px;
+}
+.comments .client-feedback .comment2 {
+  margin-top: 60px;
+  height: 218px;
+}
+.comments .client-feedback .comment2 .personality-client {
+  text-align: center;
+}
+.comments .client-feedback .comment2 .personality-client h4 {
+  font-family: Calibril Light;
+  color: #201215;
+}
+.comments .client-feedback .comment2 .review-text {
+  width: 850px;
+  height: 218px;
+  background: #f8f8f8;
+  margin-right: 94px;
+}
+.comments .client-feedback .comment2 .review-text p {
+  padding: 25px 60px 0 60px;
+  font-family: Calibril Light;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.comments .client-feedback .comment2 .review-text .italic {
+  margin-top: 20px;
+  font-style: italic;
+  font-family: Calibril Light;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 0 60px;
+}
+.comments .client-feedback .comment3 {
+  margin-top: 60px;
+}
+.comments .client-feedback .comment3 .personality-client {
+  text-align: center;
+}
+.comments .client-feedback .comment3 .personality-client h4 {
+  font-family: Calibril Light;
+  color: #201215;
+}
+.comments .client-feedback .comment3 .review-text {
+  width: 850px;
+  height: 218px;
+  background: #f8f8f8;
+  margin-left: 94px;
+}
+.comments .client-feedback .comment3 .review-text p {
+  padding: 25px 60px 0 60px;
+  font-family: Calibril Light;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.comments .client-feedback .comment3 .review-text .italic {
+  margin-top: 20px;
+  font-style: italic;
+  font-family: Calibril Light;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 0 60px;
+}
+/* Карта */
+.map {
+  height: 500px;
+}
+.tmap {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(41%, #ffffff), to(rgba(248, 248, 248, 0)));
+  background: linear-gradient(to bottom, #ffffff 41%, rgba(248, 248, 248, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  height: 300px;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  margin-bottom: -295px;
+  font-size: 28px;
+}
+.tmap .header-map h2 {
+  margin-top: 80px;
+  font-family: Calibril;
+  font-weight: 900;
+  color: #000;
+  font-size: 38px;
+  text-align: center;
+}
+#map {
+  height: 500px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.ballon {
+  position: absolute;
+}
+@media (min-width: 1400px) {
+  .page-menu {
+    padding: 10px 150px;
+  }
+  .page-menu .navigation-menu .menu {
+    padding: 35px 0 0 200px;
+  }
+  .page-menu .contact-menu .contact {
+    margin-left: 110px;
+  }
+  .page-menu .contact-menu .button {
+    margin-left: 80px;
+  }
+  .slider .slider-item h1 {
+    font-size: 52px;
+  }
+  .slider .slider-item p {
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+  .slick-prev {
+    left: -86px;
+  }
+  .slick-next {
+    right: -86px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1040px) {
+  .page-menu {
+    height: 80px;
+  }
+  .page-menu .logo img {
+    width: 150px;
+  }
+  .page-menu .navigation-menu .menu {
+    padding: 25px 0 0 0px;
+  }
+  .page-menu .navigation-menu .menu li {
+    font-size: 11px;
+  }
+  .page-menu .contact-menu .contact img {
+    height: 32px;
+    margin-top: 16px;
+  }
+  .page-menu .contact-menu .contact p {
+    margin: 17px 0 0 10px;
+    font-size: 11px;
+  }
+  .page-menu .contact-menu .button {
+    margin: 13px 0 0 25px;
+  }
+  .page-menu .contact-menu .button .menu_btn {
+    padding: 5px 26px;
+  }
+  .slick-prev {
+    /* Левая стрелка */
+    left: -10px;
+  }
+  .slick-next {
+    /* Певая стрелка */
+    right: -10px;
+  }
+  .about-us {
+    /* Преимущество */
+  }
+  .about-us .our-advantage {
+    margin-top: 40px;
+  }
+  .about-us .our-advantage .box-advantage-1,
+  .about-us .our-advantage .box-advantage-2,
+  .about-us .our-advantage .box-advantage-3,
+  .about-us .our-advantage .box-advantage-4,
+  .about-us .our-advantage .box-advantage-5,
+  .about-us .our-advantage .box-advantage-6,
+  .about-us .our-advantage .box-advantage-7,
+  .about-us .our-advantage .box-advantage-8 {
+    margin: 0;
+  }
+  .box {
+    height: 1200px;
+  }
+  /* Гарантия */
+  .guarantee .box-guarantee a {
+    margin-left: -5px;
+  }
+  /* Отзывы */
+  .comments .client-feedback .comment1 .review-text {
+    width: 710px;
+    margin-left: -10px;
+  }
+  .comments .client-feedback .comment1 .review-text p {
+    font-size: 16px;
+    padding: 25px 25px 0 25px;
+  }
+  .comments .client-feedback .comment1 .review-text .italic {
+    margin-top: 30px;
+    padding: 0 25px;
+  }
+  .comments .client-feedback .comment2 .review-text {
+    width: 710px;
+    margin-right: -10px;
+  }
+  .comments .client-feedback .comment2 .review-text p {
+    font-size: 16px;
+    padding: 25px 25px 0 25px;
+  }
+  .comments .client-feedback .comment2 .review-text .italic {
+    margin-top: 30px;
+    padding: 0 25px;
+  }
+  .comments .client-feedback .comment3 .review-text {
+    width: 710px;
+    margin-left: -10px;
+  }
+  .comments .client-feedback .comment3 .review-text p {
+    font-size: 16px;
+    padding: 25px 25px 0 25px;
+  }
+  .comments .client-feedback .comment3 .review-text .italic {
+    margin-top: 30px;
+    padding: 0 25px;
+  }
+}
+@media (max-width: 768px) {
+  .page-menu {
+    padding: 10px 20px;
+  }
+  .page-menu .navigation-menu .menu {
+    padding: 21px 0 0 0px;
+  }
+  .page-menu .navigation-menu .menu .effect:hover {
+    background-position: 19% 50%;
+  }
+  .page-menu .navigation-menu .menu li {
+    padding-left: 20px;
+  }
+  .page-menu .navigation-menu .menu li:hover {
+    background-position: 14% 50%;
+  }
+  .page-menu .contact-menu .contact img {
+    margin-top: 11px;
+  }
+  .page-menu .contact-menu .contact p {
+    margin: 13px 0 0 10px;
+    font-size: 10px;
+  }
+  .page-menu .contact-menu .button {
+    margin: 10px 0 0 25px;
+  }
+  .page-menu .contact-menu .button .menu_btn {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+  .slider .slider-item h1 {
+    font-size: 40px;
+  }
+  .slick-prev {
+    /* Левая стрелка */
+    left: -6px;
+  }
+  .slick-next {
+    /* Певая стрелка */
+    right: -6px;
+  }
+  /* О нас */
+  .about-us {
+    /* Первый */
+    /* Преимущество */
+  }
+  .about-us .about-our-store .history-store p {
+    margin-top: 40px;
+  }
+  .about-us .about-our-store .history-store p br {
+    display: none;
+  }
+  .about-us .about-our-store .history-store .mini-box {
+    position: relative;
+    top: 43px;
+  }
+  .about-us .about-our-store .history-store ul {
+    height: 115px;
+    margin: 0;
+  }
+  .about-us .about-our-store .iPhone img {
+    width: 300px;
+  }
+  .about-us .our-advantage {
+    margin-top: 85px;
+  }
+  /* Товар */
+  .product-catalog .header-product h1 {
+    font-size: 63px;
+  }
+  .product-catalog .product .product-menu img {
+    width: 100%;
+    right: 0%;
+  }
+  .product-catalog .product .product-menu .menu-iphone {
+    margin: 31px 0 0 18px;
+  }
+  .product-catalog .product .product-menu .menu-iphone li {
+    margin-left: 28px;
+  }
+  .product-catalog .product .product-menu .menu-accessories {
+    margin: 10px 0 0 119px;
+  }
+  .product-catalog .product .product-menu .menu-accessories li {
+    margin-left: 28px;
+  }
+  /* Гарантия */
+  .guarantee {
+    height: 500px;
+  }
+  .guarantee .box-guarantee p br {
+    display: none;
+  }
+  .guarantee .box-guarantee a {
+    bottom: 7%;
+    left: 41%;
+    margin: 0 0 3px 2px;
+  }
+  /* Отзывы */
+  .comments .client-feedback .personality-client img {
+    width: 155px;
+  }
+  .comments .client-feedback .personality-client h4 {
+    margin-top: 30px;
+  }
+  .comments .client-feedback .comment1 .review-text {
+    width: 535px;
+    height: 200px;
+    margin-left: -10px;
+  }
+  .comments .client-feedback .comment1 .review-text p {
+    font-size: 14px;
+    padding: 15px 25px 0 25px;
+  }
+  .comments .client-feedback .comment1 .review-text p br {
+    display: none;
+  }
+  .comments .client-feedback .comment1 .review-text .italic {
+    margin-top: 10px;
+    padding: 0 25px;
+    font-size: 14px;
+  }
+  .comments .client-feedback .comment2 .review-text {
+    width: 525px;
+    height: 200px;
+    margin-right: -10px;
+  }
+  .comments .client-feedback .comment2 .review-text p {
+    font-size: 14px;
+    padding: 15px 25px 0 25px;
+  }
+  .comments .client-feedback .comment2 .review-text p br {
+    display: none;
+  }
+  .comments .client-feedback .comment2 .review-text .italic {
+    margin-top: 10px;
+    padding: 0 25px;
+    font-size: 14px;
+  }
+  .comments .client-feedback .comment3 .review-text {
+    width: 535px;
+    height: 200px;
+    margin-left: -10px;
+  }
+  .comments .client-feedback .comment3 .review-text p {
+    font-size: 14px;
+    padding: 15px 25px 0 25px;
+  }
+  .comments .client-feedback .comment3 .review-text p br {
+    display: none;
+  }
+  .comments .client-feedback .comment3 .review-text .italic {
+    margin-top: 10px;
+    padding: 0 25px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 414px) {
+  .page-menu {
+    height: 123px;
+    width: 414px;
+  }
+  .page-menu .logo {
+    width: 100%;
+    float: left;
+  }
+  .page-menu .logo img {
+    width: 140px;
+  }
+  .page-menu .navigation-menu {
+    width: 100%;
+    float: left;
+  }
+  .page-menu .contact-menu {
+    width: 100%;
+    float: left;
+  }
+  .page-menu .contact-menu .contact {
+    display: none;
+  }
+  .page-menu .contact-menu .button {
+    position: relative;
+    bottom: 107px;
+    left: 59%;
+  }
+  /* Шапка */
+  .header {
+    background-position: 60%;
+    height: 800px;
+  }
+  .slider {
+    margin-top: 280px;
+  }
+  .slider .slider-item h1 {
+    font-size: 38px;
+  }
+  .slider .slider-item .old-price {
+    margin: 30px 0 0 0;
+  }
+  .slider .slider-item .new-price {
+    margin: 30px 0 0 0;
+  }
+  .slick-prev {
+    /* Левая стрелка */
+    left: -5px;
+    top: 46%;
+  }
+  .slick-next {
+    /* Певая стрелка */
+    right: -5px;
+    top: 47%;
+  }
+  /* О нас */
+  .about-us {
+    /* Первый */
+    /* Преимущество */
+  }
+  .about-us .about-our-store .history-store .mini-box {
+    width: 385px;
+  }
+  .about-us .about-our-store .history-store .text-jobs {
+    display: inline-block;
+    width: 320px;
+    position: relative;
+    bottom: 68px;
+    left: 3%;
+  }
+  .about-us .about-our-store .history-store ul .category-4,
+  .about-us .about-our-store .history-store ul .category-5,
+  .about-us .about-our-store .history-store ul .category-6 {
+    margin: 10px 0 0 40px;
+    width: 150px;
+  }
+  .about-us .about-our-store .iPhone {
+    float: none;
+    margin: 120px 0 0 40px;
+  }
+  .about-us .our-advantage {
+    margin-top: 40px;
+  }
+  .about-us .our-advantage .box-advantage-1,
+  .about-us .our-advantage .box-advantage-2,
+  .about-us .our-advantage .box-advantage-3,
+  .about-us .our-advantage .box-advantage-4,
+  .about-us .our-advantage .box-advantage-5,
+  .about-us .our-advantage .box-advantage-6,
+  .about-us .our-advantage .box-advantage-7,
+  .about-us .our-advantage .box-advantage-8 {
+    margin: 0;
+  }
+  /* Товар */
+  .product-catalog .header-product h1 {
+    font-size: 34px;
+  }
+  .product-catalog .product .product-menu {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 55%);
+  }
+  .product-catalog .product .product-menu img {
+    display: none;
+  }
+  .product-catalog .product .product-menu .menu-iphone {
+    margin: 31px 0 0 20px;
+    position: relative;
+    top: 15px;
+  }
+  .product-catalog .product .product-menu .menu-iphone li {
+    margin: 0 13px 0 0;
+  }
+  .product-catalog .product .product-menu .menu-iphone li a {
+    font-size: 8px;
+  }
+  .product-catalog .product .product-menu .menu-accessories {
+    margin: 20px 0 0 60px;
+  }
+  .product-catalog .product .product-menu .menu-accessories li {
+    margin: 0 13px 0 0;
+  }
+  .product-catalog .product .product-menu .menu-accessories li a {
+    font-size: 8px;
+  }
+  /* Гарантия */
+  .guarantee {
+    height: 700px;
+  }
+  .guarantee .box-guarantee a {
+    bottom: 5%;
+    left: 34%;
+  }
+  /* Отзывы */
+  .comments .client-feedback .comment1 .review-text {
+    width: 100%;
+    height: 265px;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+  .comments .client-feedback .comment2 {
+    height: 545px;
+  }
+  .comments .client-feedback .comment2 .position {
+    position: absolute;
+    bottom: 67px;
+    right: 29%;
+  }
+  .comments .client-feedback .comment2 .position-text {
+    position: relative;
+    top: 228px;
+  }
+  .comments .client-feedback .comment2 .review-text {
+    width: 100%;
+    height: 265px;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+  .comments .client-feedback .comment2 .review-text p {
+    padding: 7px 25px 0 25px;
+  }
+  .comments .client-feedback .comment3 .review-text {
+    width: 100%;
+    height: 265px;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .page-menu {
+    width: 375px;
+    height: 123px;
+  }
+  .page-menu .navigation-menu {
+    width: 100%;
+  }
+  .page-menu .navigation-menu .menu li {
+    font-size: 12px;
+  }
+  .page-menu .contact-menu {
+    width: 50%;
+  }
+  .page-menu .contact-menu .contact {
+    display: none;
+  }
+  .page-menu .contact-menu .button {
+    position: relative;
+    bottom: 102px;
+    left: 110%;
+  }
+  /* Шапка */
+  .slider {
+    margin-top: 280px;
+  }
+  .slider .slider-item h1 {
+    font-size: 32px;
+  }
+  .slider .slider-item p {
+    font-size: 12px;
+  }
+  .slick-prev {
+    /* Левая стрелка */
+    left: -5px;
+    top: 44%;
+  }
+  .slick-next {
+    /* Певая стрелка */
+    right: -5px;
+    top: 45%;
+  }
+  /* О нас */
+  .about-us {
+    /* Первый */
+  }
+  .about-us .about-our-store .history-store .mini-box {
+    width: 360px;
+  }
+  .about-us .about-our-store .history-store .text-jobs {
+    width: 320px;
+    position: relative;
+    bottom: 64px;
+    left: 3%;
+  }
+  .about-us .about-our-store .history-store ul .category-4,
+  .about-us .about-our-store .history-store ul .category-5,
+  .about-us .about-our-store .history-store ul .category-6 {
+    width: 140px;
+  }
+  .about-us .about-our-store .iPhone {
+    float: none;
+    margin: 120px 0 0 20px;
+  }
+  /* Товар */
+  .product-catalog .header-product h1 {
+    font-size: 30px;
+  }
+  .product-catalog .product .product-menu .menu-iphone {
+    margin: 31px 0 0 13px;
+    position: relative;
+    top: 15px;
+  }
+  .product-catalog .product .product-menu .menu-iphone li {
+    margin: 0 9px 0 0;
+  }
+  .product-catalog .product .product-menu .menu-accessories {
+    margin: 20px 0 0 45px;
+  }
+  .product-catalog .product .product-menu .menu-accessories li {
+    margin: 0 9px 0 0;
+  }
+  /* Гарантия */
+  .guarantee {
+    height: 770px;
+  }
+  /* Отзывы */
+  .comments .client-feedback .comment1 .review-text {
+    height: 280px;
+  }
+  .comments .client-feedback .comment2 .review-text {
+    height: 290px;
+  }
+  .comments .client-feedback .comment3 .review-text {
+    height: 280px;
+  }
+}
+@media (max-width: 320px) {
+  .page-menu {
+    width: 320px;
+  }
+  .page-menu .navigation-menu .menu .effect {
+    padding-left: 14px;
+  }
+  .page-menu .navigation-menu .menu .effect:hover {
+    background-position: 7% 50%;
+  }
+  .page-menu .navigation-menu .menu li {
+    font-size: 10px;
+    padding-left: 18px;
+  }
+  .page-menu .contact-menu .contact {
+    display: none;
+  }
+  .page-menu .contact-menu .button {
+    position: relative;
+    bottom: 100px;
+    left: -5%;
+  }
+  /* Шапка */
+  .slider {
+    margin-top: 280px;
+  }
+  .slider .slider-item h1 {
+    font-size: 28px;
+  }
+  .slider .slider-item p {
+    font-size: 10px;
+  }
+  .slick-prev {
+    /* Левая стрелка */
+    left: -5px;
+    top: 42%;
+  }
+  .slick-next {
+    /* Певая стрелка */
+    right: -5px;
+    top: 42%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

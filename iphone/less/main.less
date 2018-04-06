@@ -1,0 +1,1545 @@
+@font-face {
+  font-family: Calibril Light;
+  src: url('../fonts/calibril_0.ttf');
+}
+@font-face {
+  font-family: Calibril;
+  src: url('../fonts/calibrib_0.ttf');
+}
+.p{/* градиент */
+	background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* Меню */
+.page-menu{
+	width: 100%;
+	height: 120px;
+	padding: 10px 50px;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 100;
+	.logo{
+        width: 20%;
+        float: left;
+	}
+	.navigation-menu{
+		width: 45%;
+        float: left;
+		.menu{
+			display: flex;
+			padding: 35px 0 0 35px;
+			.effect{
+				&:hover{
+					background-position: 28% 50%;
+				}
+			}
+			li{
+				list-style-type: none;
+				padding-left: 35px;
+				text-align: right;
+				&:hover{
+					background: url(../img/effect.png) no-repeat;
+                    background-position: 23% 50%;
+				}
+				a{
+					color: #fff;
+					text-decoration: none;
+					&:hover{
+						color: #a286c4;
+					}
+				}
+			}
+		}
+	}
+	.contact-menu{
+		display: flex;
+		width: 35%;
+        float: right;
+        .contact{
+            display: flex;
+            img{
+            	margin-top: 25px;
+            }
+            p{
+            	color: #fff;
+            	margin: 25px 0 0 10px;
+            }
+        }
+        .button{
+        	text-align: right;
+        	margin: 25px 0 0 60px;
+            .menu_btn{
+            	display: inline-block;
+            	text-decoration: none;
+            	background: linear-gradient(to right, #72a9d7, #c070b7);
+                padding: 7px 45px;
+                border-radius: 5px;
+                border-bottom: 4px solid #7b71bd;
+                color: #fff;
+                box-shadow:-1px 8px 42px 0px rgba(255,255,255,0.28);
+            }
+        }
+	}
+}
+.page-menu.fixed{
+	background: rgba(0, 0, 0, 0.8);
+}
+/* Шапка */
+.header{
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 878px;
+}
+.slider{
+	margin-top: 350px;
+	.slider-item{
+		text-align: center;
+		h1{
+			color: #fff;
+			font-family: Calibril Light;
+			font-size: 45px;
+			letter-spacing: 1px;
+		}
+		p{
+			margin-top: 30px;
+			color: #fff;
+			letter-spacing: 1.5px;
+			span{
+				color: #7ca2d3;
+			}
+		}
+		img{
+			display: inline-block;
+		}
+		.old-price{
+			margin: 30px 10px 0 0;
+		}
+		.new-price{
+			margin: 30px 0 0 10px;
+		}
+	}
+}
+.slick-prev{/* Левая стрелка */
+    background: url(../img/left-arrow.png) no-repeat;
+    height: 42px;
+    width: 22px;
+    &:before{
+    	display: none;
+    }
+    &:hover{
+    	background: url(../img/left-arrow.png) no-repeat !important;
+    }
+    &:focus{
+    	background: url(../img/left-arrow.png) no-repeat !important;
+    }
+}
+.slick-next{/* Певая стрелка */
+    background: url(../img/right-arrow.png) no-repeat;
+    height: 42px;
+    width: 22px;
+    &:before{
+    	display: none;
+    }
+    &:hover{
+    	background: url(../img/right-arrow.png) no-repeat !important;
+    }
+    &:focus{
+    	background: url(../img/right-arrow.png) no-repeat !important;
+    }
+}
+/* О нас */
+.about-us{
+	/* Первый */
+	.about-our-store{
+        .history-store{
+        	h2{
+        		margin-top: 120px;
+                font-size: 38px;
+        		font-family: Calibri;
+        		font-weight: 900;
+        	}
+        	p{
+        		margin-top: 50px;
+        		color: #a8a8a8;
+        	}
+        	.mini-box{
+        		position: relative;
+        		top: 50px;
+        		right: 2%;
+        	}
+        	.text-jobs{
+        		position: relative;
+        		bottom: 72px;
+        		left: 5%;
+        		color: #fff;
+        		letter-spacing: 1px;
+        	}
+        	ul{
+        		margin-top: 30px;
+        		list-style-type: none;
+        		.category-1,.category-2,.category-3{
+        			position: relative;
+        			right: 8%;
+        			margin-top: 10px;
+        			display: block;
+        			img{
+        				margin: 0 35px 5px 0;
+        			}
+        		}
+        		.category-4,.category-5,.category-6{
+        			position: relative;
+        			bottom: 113px;
+        			left: 38%;
+        			margin-top: 10px;
+        			img{
+        				margin: 0 35px 4px 0;
+        			}
+        		}
+        	}
+        }
+        .iPhone{
+        	margin-top: 126px;
+        	float: right;
+        }
+	}
+	/* Преимущество */
+	.our-advantage{
+        margin-top: 40px;
+        .box-advantage-1,.box-advantage-2,.box-advantage-3,.box-advantage-4,
+        .box-advantage-5,.box-advantage-6,.box-advantage-7,.box-advantage-8{
+            height: 220px;
+            text-align: center;
+            p{
+            	color: #242424;
+            	letter-spacing: 1px;
+            }
+        }
+        .box-advantage-3,.box-advantage-7{
+            margin-left: 40px;
+        }
+        .box-advantage-4,.box-advantage-8{
+            margin-left: 100px;
+        }
+        .box-advantage-1,.box-advantage-5{
+            margin-right: 100px;
+        }
+        .box-advantage-2,.box-advantage-6{
+            margin-right: 40px;
+        }
+        .box-advantage-1{
+            p{
+                margin-top: 5px;
+            }
+        }
+        .box-advantage-3{
+            p{
+                margin-top: 2px;
+            }
+        }
+        .box-advantage-4{
+            p{
+                margin-top: 5px;
+            }
+        }
+        .box-advantage-6{
+        	img{
+        		margin-left: 10px;
+        	}
+            p{
+                margin-top: 2px;
+            }
+        }
+        .box-advantage-7{
+            p{
+                margin-top: 1px;
+            }
+        }
+        .box-advantage-8{
+            p{
+                margin-top: 11px;
+            }
+        }	
+	}
+}
+/* Товар */
+.product-catalog{
+	.header-product{
+		h1{
+			font-size: 80px;
+			font-size: Calibri;
+			font-weight: 600;
+			color: #e6e6e6;
+			text-align: center;
+		}
+	}
+	.product{
+		.product-menu{
+			img{
+				position: relative;
+				right: 3%;
+                top: 95px;
+			}
+			.menu-iphone{
+				display: flex;
+				margin-left: 150px;
+				padding: 0;
+				li{
+					list-style-type: none;
+					margin-left: 50px;
+					a{
+						text-decoration: none;
+						position: relative;
+						color: #fff;
+						&::after{
+							content: '';
+							display: block;
+							width: 100%;
+							height: 2px;
+							background: #fdff36;
+							transform: translateY(5px) scale(0);
+							transition: all 0.2s;
+						}
+						&:hover{
+							&::after{
+								transform: translateY(5px) scale(1);
+							}
+						}
+					}
+				}
+			}
+			.menu-accessories{
+				display: flex;
+				margin: 20px 0 0 260px;
+				li{
+					list-style-type: none;
+					margin-left: 50px;
+					a{
+						text-decoration: none;
+						position: relative;
+						color: #fff;
+						&::after{
+							content: '';
+							display: block;
+							width: 100%;
+							height: 2px;
+							background: #fdff36;
+							transform: translateY(5px) scale(0);
+							transition: all 0.2s;
+						}
+						&:hover{
+							&::after{
+								transform: translateY(5px) scale(1);
+							}
+						}
+					}
+				}
+			}
+		}
+        /* Товары */
+		/* Первая линия */
+		.iphone-4,.iphone-5,.iphone-se,.iphone-6,.iphone-7,.iphone-8,.iphone-X{
+            display:none;
+		}
+		.iphone-4.active{
+			display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    margin-top: 15px;
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+		.iphone-5.active{
+            display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+		.iphone-se.active{
+            display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+		.iphone-6.active{
+            display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+		.iphone-7.active{
+            display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+		.iphone-8.active{
+            display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+		.iphone-X.active{
+            display:block;
+			.tovar{
+				height: 625px;
+				margin-top: 80px;
+				border: 1px solid #ccc;
+				text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+			}
+		}
+        /* Вторая линия */
+        .ipad,.ipod,.watch,.accessories,.imac{
+            display:none;
+        }
+        .ipad.active{
+            display:block;
+            .tovar{
+                height: 625px;
+                margin-top: 80px;
+                border: 1px solid #ccc;
+                text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+            }
+        }
+        .ipod.active{
+            display:block;
+            .tovar{
+                height: 625px;
+                margin-top: 80px;
+                border: 1px solid #ccc;
+                text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+            }
+        }
+        .watch.active{
+            display:block;
+            .tovar{
+                height: 625px;
+                margin-top: 80px;
+                border: 1px solid #ccc;
+                text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+            }
+        }
+        .accessories.active{
+            display:block;
+            .tovar{
+                height: 625px;
+                margin-top: 80px;
+                border: 1px solid #ccc;
+                text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+            }
+        }
+        .imac.active{
+            display:block;
+            .tovar{
+                height: 625px;
+                margin-top: 80px;
+                border: 1px solid #ccc;
+                text-align: center;
+                h4{
+                    font-family: Calibril;
+                    font-size: 22px;
+                }
+                p{
+                    font-weight: 600;
+                    font-family: Calibril Light;
+                    font-size: 16px;
+                }
+                button{
+                    margin-top: 15px;
+                    padding: 7px 60px;
+                    background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 65%);
+                    border: 0;
+                    border-radius: 5px;
+                    color: #fff;
+                }
+            }
+        }
+	}
+}
+/* Гарантия */
+.guarantee{
+    background: url(../img/bd-guarantee.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 530px;
+    margin-top: 80px;
+    .box-guarantee{
+        text-align: center;
+        h2{
+            margin-top: 45px;
+            font-family: Calibril Light;
+            font-weight: 900;
+            color: #fff;
+            font-size: 38px;
+        }
+        p{
+            font-family: Calibril Light;
+            color: #fff;
+            letter-spacing: .6px;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+        img{
+            margin-top: 40px;
+            position: relative;
+        }
+        a{
+            position: absolute;
+            bottom: 7%;
+            left: 44%;
+            font-size: 16px;
+            margin-left: 5px;
+            .p();
+        }
+    }
+}
+/* Отзывы */
+.comments{
+    .header-comments{
+        h2{
+            margin-top: 80px;
+            font-family: Calibril;
+            font-weight: 900;
+            color: #000;
+            font-size: 38px;
+            text-align: center;
+        }
+    }
+    .client-feedback{
+        .comment1{
+            margin-top: 80px;
+            .personality-client{
+                text-align: center;
+                h4{
+                    font-family: Calibril Light;
+                    color: #201215;
+
+                }
+            }
+            .review-text{
+                width: 850px;
+                height: 218px;
+                background: #f8f8f8;
+                margin-left: 94px;
+                p{
+                    padding: 25px 60px 0 60px;
+                    font-family: Calibril Light;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                }
+                .italic{
+                    margin-top: 20px;
+                    font-style: italic;
+                    font-family: Calibril Light;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    padding: 0 60px;
+                }
+            }
+        }
+        .comment2{
+            margin-top: 60px;
+            height: 218px;
+            .personality-client{
+                text-align: center;
+                h4{
+                    font-family: Calibril Light;
+                    color: #201215;
+
+                }
+            }
+            .review-text{
+                width: 850px;
+                height: 218px;
+                background: #f8f8f8;
+                margin-right: 94px;
+                p{
+                    padding: 25px 60px 0 60px;
+                    font-family: Calibril Light;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                }
+                .italic{
+                    margin-top: 20px;
+                    font-style: italic;
+                    font-family: Calibril Light;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    padding: 0 60px;
+                }
+            }
+        }
+        .comment3{
+            margin-top: 60px;
+            .personality-client{
+                text-align: center;
+                h4{
+                    font-family: Calibril Light;
+                    color: #201215;
+
+                }
+            }
+            .review-text{
+                width: 850px;
+                height: 218px;
+                background: #f8f8f8;
+                margin-left: 94px;
+                p{
+                    padding: 25px 60px 0 60px;
+                    font-family: Calibril Light;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                }
+                .italic{
+                    margin-top: 20px;
+                    font-style: italic;
+                    font-family: Calibril Light;
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    padding: 0 60px;
+                }
+            }
+        }
+    }
+}
+/* Карта */
+.map{
+    height: 500px;
+}
+.tmap{
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 41%, rgba(248,248,248,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 41%,rgba(248,248,248,0) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 41%,rgba(248, 248, 248, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    height: 300px;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    margin-bottom: -295px;
+    font-size: 28px;
+    .header-map{
+        h2{
+            margin-top: 80px;
+            font-family: Calibril;
+            font-weight: 900;
+            color: #000;
+            font-size: 38px;
+            text-align: center;
+        }
+    }
+}
+#map {
+    height: 500px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.ballon{
+        position: absolute;
+    }
+@media (min-width: 1400px){
+	.page-menu{
+		padding: 10px 150px;
+		.navigation-menu{
+			.menu{
+				padding: 35px 0 0 200px;
+			}
+		}
+		.contact-menu{
+			.contact{
+				margin-left: 110px;
+			}
+			.button{
+				margin-left: 80px;
+			}
+		}
+	}
+	.slider{
+		.slider-item{
+			h1{
+				font-size: 52px;
+			}
+			p{
+				font-size: 17px;
+				letter-spacing: 2px;
+			}
+		}
+	}
+	.slick-prev{
+        left: -86px;
+	}
+	.slick-next{
+        right: -86px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1040px){
+    .page-menu{
+    	height: 80px;
+    	.logo{
+    		img{
+    			width: 150px;
+    		}
+    	}
+    	.navigation-menu{
+    		.menu{
+    			padding: 25px 0 0 0px;
+    			li{
+    				font-size: 11px;
+    			}
+    		}
+    	}
+    	.contact-menu{
+    		.contact{
+    			img{
+    				height: 32px;
+                    margin-top: 16px;
+    			}
+    			p{
+    				margin: 17px 0 0 10px;
+                    font-size: 11px;
+    			}
+    		}
+    		.button{
+                margin: 13px 0 0 25px;
+                .menu_btn{
+                    padding: 5px 26px;
+                }
+    		}
+    	}
+    }
+    .slick-prev{/* Левая стрелка */
+    	left: -10px;
+    }
+    .slick-next{/* Певая стрелка */
+        right: -10px;
+    }
+    .about-us{
+    	/* Преимущество */
+	    .our-advantage{
+            margin-top: 40px;
+            .box-advantage-1,.box-advantage-2,.box-advantage-3,.box-advantage-4,
+            .box-advantage-5,.box-advantage-6,.box-advantage-7,.box-advantage-8{
+            	margin: 0;
+            }
+        }
+    }
+    .box{
+    	height: 1200px;
+    }
+    /* Гарантия */
+    .guarantee{
+        .box-guarantee{
+            a{
+                margin-left: -5px;
+            }
+        }
+    }
+    /* Отзывы */
+    .comments{
+        .client-feedback{
+            .comment1{
+                .review-text{
+                    width: 710px;
+                    margin-left: -10px;
+                    p{
+                        font-size: 16px;
+                        padding: 25px 25px 0 25px;
+                    }
+                    .italic{
+                        margin-top: 30px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+            .comment2{
+                .review-text{
+                    width: 710px;
+                    margin-right: -10px;
+                    p{
+                        font-size: 16px;
+                        padding: 25px 25px 0 25px;
+                    }
+                    .italic{
+                        margin-top: 30px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+            .comment3{
+                .review-text{
+                    width: 710px;
+                    margin-left: -10px;
+                    p{
+                        font-size: 16px;
+                        padding: 25px 25px 0 25px;
+                    }
+                    .italic{
+                        margin-top: 30px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .page-menu{
+    	padding: 10px 20px;
+    	.navigation-menu{
+    		.menu{
+    			padding: 21px 0 0 0px;
+    			.effect{
+    				&:hover{
+    					background-position: 19% 50%;
+    				}
+    			}
+    			li{
+    				padding-left: 20px;
+    				&:hover{
+    					background-position: 14% 50%;
+    				}
+    			}
+    		}
+    	}
+    	.contact-menu{
+    		.contact{
+    			img{
+    				margin-top: 11px;
+    			}
+                p{
+                	margin: 13px 0 0 10px;
+                	font-size: 10px;
+                }
+    		}
+    		.button{
+    			margin: 10px 0 0 25px;
+                .menu_btn{
+                	padding: 8px 15px;
+                	font-size: 11px;
+                }
+    		}
+    	}
+    }
+    .slider{
+    	.slider-item{
+    		h1{
+    			font-size: 40px;
+    		}
+    	}
+    }
+    .slick-prev{/* Левая стрелка */
+    	left: -6px;
+    }
+    .slick-next{/* Певая стрелка */
+        right: -6px;
+    }
+    /* О нас */
+    .about-us{
+    	/* Первый */
+    	.about-our-store{
+    		.history-store{
+                p{
+                	margin-top: 40px;
+                	br{
+                		display: none;
+                	}
+                }
+                .mini-box{
+                	position: relative;
+                    top: 43px;
+                }
+                ul{
+                	height: 115px;
+                	margin: 0;	
+                }
+    		}
+    		.iPhone{
+                img{
+                	width: 300px;
+                }
+    		}
+    	}
+    	/* Преимущество */
+	    .our-advantage{
+	    	margin-top: 85px;
+	    }
+    }
+    /* Товар */
+	.product-catalog{
+		.header-product{
+			h1{
+				font-size: 63px;
+			}
+		}
+		.product{
+			.product-menu{
+				img{
+					width: 100%;
+					right: 0%;
+				}
+				.menu-iphone{
+                    margin: 31px 0 0 18px;
+                    li{
+                    	margin-left: 28px;
+                    }
+				}
+				.menu-accessories{
+                    margin: 10px 0 0 119px;
+                    li{
+                        margin-left: 28px;
+                    }
+				}
+			}
+		}
+	}
+    /* Гарантия */
+    .guarantee{
+        height: 500px;
+        .box-guarantee{
+            p{
+                br{
+                    display: none;
+                }
+            }
+            a{
+                bottom: 7%;
+                left: 41%;
+                margin: 0 0 3px 2px;
+            }
+        }
+    }
+    /* Отзывы */
+    .comments{
+        .client-feedback{
+            .personality-client{
+                img{
+                    width: 155px;
+                }
+                h4{
+                    margin-top: 30px;
+                }
+            }
+            .comment1{
+                .review-text{
+                    width: 535px;
+                    height: 200px;
+                    margin-left: -10px;
+                    p{
+                        font-size: 14px;
+                        padding: 15px 25px 0 25px;
+                        br{
+                            display: none;
+                        }
+                    }
+                    .italic{
+                        margin-top: 10px;
+                        padding: 0 25px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .comment2{
+                .review-text{
+                    width: 525px;
+                    height: 200px;
+                    margin-right: -10px;
+                    p{
+                        font-size: 14px;
+                        padding: 15px 25px 0 25px;
+                        br{
+                            display: none;
+                        }
+                    }
+                    .italic{
+                        margin-top: 10px;
+                        padding: 0 25px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .comment3{
+                .review-text{
+                    width: 535px;
+                    height: 200px;
+                    margin-left: -10px;
+                    p{
+                        font-size: 14px;
+                        padding: 15px 25px 0 25px;
+                        br{
+                            display: none;
+                        }
+                    }
+                    .italic{
+                        margin-top: 10px;
+                        padding: 0 25px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px){
+    .page-menu{
+    	height: 123px;
+    	width: 414px;
+    	.logo{
+    		width: 100%;
+    		float: left;
+    		img{
+    			width: 140px;
+    		}
+    	}
+    	.navigation-menu{
+    		width: 100%;
+    		float: left;
+    	}
+    	.contact-menu{
+    		width: 100%;
+    		float: left;
+    		.contact{
+    			display: none;
+    		}
+    		.button{
+    			position: relative;
+                bottom: 107px;
+                left: 59%;
+    		}
+    	}
+    }
+    /* Шапка */
+    .header{
+    	background-position: 60%;
+        height: 800px;
+    }
+    .slider{
+    	margin-top: 280px;
+    	.slider-item{
+    		h1{
+    			font-size: 38px;
+    		}
+    		.old-price{
+                margin: 30px 0 0 0;
+    		}
+    		.new-price{
+                margin: 30px 0 0 0;
+    		}
+    	}
+    }
+    .slick-prev{/* Левая стрелка */
+    	left: -5px;
+        top: 46%;
+    }
+    .slick-next{/* Певая стрелка */
+    	right: -5px;
+        top: 47%;
+    }
+    /* О нас */
+    .about-us{
+    	/* Первый */
+    	.about-our-store{
+    		.history-store{
+    			.mini-box{
+                    width: 385px;
+    			}
+    			.text-jobs{
+    				display: inline-block;
+    				width: 320px;
+    				position: relative;
+                    bottom: 68px;
+                    left: 3%;
+    			}
+    			ul{
+    				.category-4,.category-5,.category-6{
+    					margin: 10px 0 0 40px;
+    					width: 150px;
+    				}
+    			}
+    		}
+    		.iPhone{
+    			float: none;
+    			margin: 120px 0 0 40px;
+    		}
+        }
+        /* Преимущество */
+	    .our-advantage{
+            margin-top: 40px;
+            .box-advantage-1,.box-advantage-2,.box-advantage-3,.box-advantage-4,
+            .box-advantage-5,.box-advantage-6,.box-advantage-7,.box-advantage-8{
+            	margin: 0;
+            }
+        }
+    }
+    /* Товар */
+	.product-catalog{
+		.header-product{
+			h1{
+				font-size: 34px;
+			}
+		}
+		.product{
+			.product-menu{
+				width: 100%;
+                height: 80px;
+				background: linear-gradient(90deg, #72a9d7 -10px, #c070b7 55%);
+				img{
+					display: none;
+				}
+				.menu-iphone{
+                    margin: 31px 0 0 20px;
+                    position: relative;
+                    top: 15px;
+                    li{
+                    	margin: 0 13px 0 0;
+                    	a{
+                    		font-size: 8px;
+                    	}
+                    }
+				}
+				.menu-accessories{
+                    margin: 20px 0 0 60px;
+                    li{
+                        margin: 0 13px 0 0;
+                        a{
+                        	font-size: 8px;
+                        }
+                    }
+				}
+			}
+		}
+	}
+    /* Гарантия */
+    .guarantee{
+        height: 700px;
+        .box-guarantee{
+            p{
+
+            }
+            a{
+                bottom: 5%;
+                left: 34%;
+            }
+        }
+    }
+    /* Отзывы */
+    .comments{
+        .client-feedback{
+            .comment1{
+                .review-text{
+                    width: 100%;
+                    height: 265px;
+                    margin: 30px 0 0 0;
+                    text-align: center;
+                }
+            }
+            .comment2{
+                height: 545px;
+                .position{
+                    position: absolute;
+                    bottom: 67px;
+                    right: 29%;
+                }
+                .position-text{
+                    position: relative;
+                    top: 228px;
+                }
+                .review-text{
+                    width: 100%;
+                    height: 265px;
+                    margin: 30px 0 0 0;
+                    text-align: center;
+                    p{
+                        padding: 7px 25px 0 25px;
+                    }
+                }
+            }
+            .comment3{
+                .review-text{
+                    width: 100%;
+                    height: 265px;
+                    margin: 30px 0 0 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    .page-menu{
+    	width: 375px;
+    	height: 123px;
+    	.navigation-menu{
+    		width: 100%;
+    		.menu{
+    			li{
+    				font-size: 12px;
+    			}
+    		}
+    	}
+    	.contact-menu{
+    		width: 50%;
+    		.contact{
+    			display: none;
+    		}
+    		.button{
+    			position: relative;
+                bottom: 102px;
+                left: 110%;
+    		}
+    	}
+    }
+    /* Шапка */
+    .slider{
+    	margin-top: 280px;
+    	.slider-item{
+    		h1{
+    			font-size: 32px;
+    		}
+    		p{
+    			font-size: 12px;
+    		}
+    	}
+    }
+    .slick-prev{/* Левая стрелка */
+    	left: -5px;
+        top: 44%;
+    }
+    .slick-next{/* Певая стрелка */
+    	right: -5px;
+        top: 45%;
+    }
+    /* О нас */
+    .about-us{
+    	/* Первый */
+    	.about-our-store{
+    		.history-store{
+    			.mini-box{
+                    width: 360px;
+    			}
+    			.text-jobs{
+    				width: 320px;
+    				position: relative;
+                    bottom: 64px;
+                    left: 3%;
+    			}
+    			ul{
+    				.category-4,.category-5,.category-6{
+    					width: 140px;
+    				}
+    			}
+    		}
+    		.iPhone{
+    			float: none;
+    			margin: 120px 0 0 20px;
+    		}
+        }
+    }
+     /* Товар */
+	.product-catalog{
+		.header-product{
+			h1{
+				font-size: 30px;
+			}
+		}
+		.product{
+			.product-menu{
+				.menu-iphone{
+                    margin: 31px 0 0 13px;
+                    position: relative;
+                    top: 15px;
+                    li{
+                    	margin: 0 9px 0 0;
+                    }
+				}
+				.menu-accessories{
+                    margin: 20px 0 0 45px;
+                    li{
+                        margin: 0 9px 0 0;
+                    }
+				}
+			}
+		}
+	}
+    /* Гарантия */
+    .guarantee{
+        height: 770px;
+    }
+        /* Отзывы */
+    .comments{
+        .client-feedback{
+            .comment1{
+                .review-text{
+                    height: 280px;
+                }
+            }
+            .comment2{
+                .review-text{
+                    height: 290px;
+                }
+            }
+            .comment3{
+                .review-text{
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+	.page-menu{
+		width: 320px;
+    	.navigation-menu{
+    		.menu{
+    			.effect{
+    				padding-left: 14px;
+    				&:hover{
+    					background-position: 7% 50%;
+    				}
+    			}
+    			li{
+    				font-size: 10px;
+    				padding-left: 18px;
+    			}
+    		}
+    	}
+    	.contact-menu{
+    		.contact{
+    			display: none;
+    		}
+    		.button{
+    			position: relative;
+                bottom: 100px;
+                left: -5%;
+    		}
+    	}
+    }
+    /* Шапка */
+    .slider{
+    	margin-top: 280px;
+    	.slider-item{
+    		h1{
+    			font-size: 28px;
+    		}
+    		p{
+    			font-size: 10px;
+    		}
+    	}
+    }
+    .slick-prev{/* Левая стрелка */
+    	left: -5px;
+        top: 42%;
+    }
+    .slick-next{/* Певая стрелка */
+    	right: -5px;
+        top: 42%;
+    }
+}
